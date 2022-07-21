@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div id="end-modal" class="end-game-modal hidden">
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Fim de Jogo!</h2>
+          <button id="restart">Começar novamente</button>
+        </div>
+      </div>
+    </div>
+    <div class="score-wrapper">
+      <h1>Pontuação Máxima: <strong id="max-score">0</strong></h1>
+      <h1>Dificuldade: <strong id="level">1</strong></h1>
+      <h1>Pontuação Atual: <strong id="score">0</strong></h1>
+    </div>
+    <div id="square" class="square"></div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

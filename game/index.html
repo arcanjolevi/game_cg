@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Three.js Editor" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&family=Montserrat:wght@300;400;500;700&family=Mouse+Memoirs&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 11px;
+        background-color: #000;
+        margin: 0px;
+      }
+      canvas {
+        display: block;
+      }
+
+      .score {
+        position: absolute;
+        top: 40%;
+        right: 200px;
+
+        color: rgb(102, 56, 114);
+        font-family: "Mouse Memoirs", sans-serif;
+        letter-spacing: 3px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body ontouchstart="">
+    <div class="score">
+      <h1>Pontuação Máxima:<strong id="maxScore">0</strong></h1>
+      <h1>Pontuação Atual: <strong id="score">0</strong></h1>
+      <h1>Dificuldade: <strong id="hardness">0</strong></h1>
+    </div>
+    <script type="module">
+      import * as THREE from "./js/three.module.js";
+      import { APP } from "./js/app.js";
+      import { VRButton } from "./js/VRButton.js";
+
+      window.THREE = THREE; // Used by APP Scripts.
+      window.VRButton = VRButton; // Used by APP Scripts.
+
+      var loader = new THREE.FileLoader();
+      loader.load("app.json", function (text) {
+        var player = new APP.Player();
+        player.load(JSON.parse(text));
+        player.setSize(window.innerWidth, window.innerHeight);
+        player.play();
+
+        document.body.appendChild(player.dom);
+
+        window.addEventListener("resize", function () {
+          player.setSize(window.innerWidth, window.innerHeight);
+        });
+      });
+    </script>
+  </body>
+</html>

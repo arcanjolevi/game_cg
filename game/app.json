@@ -1,0 +1,260 @@
+{
+	"metadata": {
+		"type": "App"
+	},
+	"project": {
+		"shadows": true,
+		"shadowType": 1,
+		"vr": false,
+		"physicallyCorrectLights": false,
+		"toneMapping": 0,
+		"toneMappingExposure": 1
+	},
+	"camera": {
+		"metadata": {
+			"version": 4.5,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"object": {
+			"uuid": "7f5557db-64ee-402d-a101-6c06e2bdb2da",
+			"type": "PerspectiveCamera",
+			"name": "Camera",
+			"layers": 1,
+			"matrix": [-0.28503157669960283,5.551115123125784e-17,0.9585181272590203,0,0.7875024161241408,0.5700885905934423,0.23417716257958032,0,-0.5464402482273606,0.8215832269923617,-0.16249324983530333,0,-1.04,2.3745709734402816,1.276,1],
+			"fov": 50,
+			"zoom": 1,
+			"near": 0.01,
+			"far": 1000,
+			"focus": 10,
+			"aspect": 1.7946127946127945,
+			"filmGauge": 35,
+			"filmOffset": 0
+		}
+	},
+	"scene": {
+		"metadata": {
+			"version": 4.5,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"geometries": [
+			{
+				"uuid": "def315fd-95db-47a7-9e9d-3795eceeeb44",
+				"type": "BoxGeometry",
+				"width": 0.11,
+				"height": 0.07,
+				"depth": 0.11,
+				"widthSegments": 1,
+				"heightSegments": 1,
+				"depthSegments": 1
+			},
+			{
+				"uuid": "cbf61ed4-bea8-42d3-843d-8dc5edb725e1",
+				"type": "SphereGeometry",
+				"radius": 0.05,
+				"widthSegments": 32,
+				"heightSegments": 16,
+				"phiStart": 0,
+				"phiLength": 6.283185307179586,
+				"thetaStart": 0,
+				"thetaLength": 3.141592653589793
+			},
+			{
+				"uuid": "e9f9795d-2db0-4fe1-a7a4-57af93719684",
+				"type": "BoxGeometry",
+				"width": 0.1,
+				"height": 0.44,
+				"depth": 2.26,
+				"widthSegments": 1,
+				"heightSegments": 1,
+				"depthSegments": 1
+			},
+			{
+				"uuid": "6ec419c8-638f-40eb-bc3b-1addabab94e0",
+				"type": "BoxGeometry",
+				"width": 0.1,
+				"height": 0.44,
+				"depth": 2.41,
+				"widthSegments": 1,
+				"heightSegments": 1,
+				"depthSegments": 1
+			},
+			{
+				"uuid": "b32cc730-7eb4-4caa-88fc-cddeece0fa02",
+				"type": "BoxGeometry",
+				"width": 0.1,
+				"height": 0.44,
+				"depth": 2.24,
+				"widthSegments": 1,
+				"heightSegments": 1,
+				"depthSegments": 1
+			}],
+		"materials": [
+			{
+				"uuid": "31bbf91d-e235-4cdf-88d4-2fc6b979b8c5",
+				"type": "MeshStandardMaterial",
+				"color": 13750737,
+				"roughness": 1,
+				"metalness": 0,
+				"emissive": 0,
+				"envMapIntensity": 1,
+				"transparent": true,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			},
+			{
+				"uuid": "82b32ccf-0e7d-43ba-b6aa-3b0eb921fe68",
+				"type": "ShadowMaterial",
+				"color": 0,
+				"transparent": true,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			},
+			{
+				"uuid": "61fb5735-5c43-4d57-9d67-c2ad6d8f994c",
+				"type": "MeshStandardMaterial",
+				"color": 9725695,
+				"roughness": 1,
+				"metalness": 0,
+				"emissive": 0,
+				"envMapIntensity": 1,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			}],
+		"object": {
+			"uuid": "02350375-ee62-46ca-9747-f034decbb011",
+			"type": "Scene",
+			"name": "Scene",
+			"layers": 1,
+			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+			"background": 14606046,
+			"children": [
+				{
+					"uuid": "959e2a49-5cc9-4522-9d08-c94437d0c47d",
+					"type": "Mesh",
+					"name": "box",
+					"castShadow": true,
+					"receiveShadow": true,
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,-0.2816372518467814,0,1],
+					"geometry": "def315fd-95db-47a7-9e9d-3795eceeeb44",
+					"material": "31bbf91d-e235-4cdf-88d4-2fc6b979b8c5"
+				},
+				{
+					"uuid": "002e0e32-e9ff-4efe-a7af-8e7fceb38c66",
+					"type": "DirectionalLight",
+					"name": "DirectionalLight",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,-5.916677548202266,3.6304020151844902,0.8397804099356492,1],
+					"color": 16777215,
+					"intensity": 0.82,
+					"shadow": {
+						"camera": {
+							"uuid": "badc781a-cb9b-4a5f-acf1-45937fcacf8c",
+							"type": "OrthographicCamera",
+							"layers": 1,
+							"zoom": 1,
+							"left": -5,
+							"right": 5,
+							"top": 5,
+							"bottom": -5,
+							"near": 0.5,
+							"far": 500
+						}
+					}
+				},
+				{
+					"uuid": "0a75285b-54f4-4265-bf71-01de07d86ebf",
+					"type": "AmbientLight",
+					"name": "AmbientLight",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,1.051678258849785,1.6140274198887388,1.1097986488421714,1],
+					"color": 2236962,
+					"intensity": 2.68
+				},
+				{
+					"uuid": "2ed3e87f-66ee-47b1-b8fa-97f260461873",
+					"type": "Mesh",
+					"name": "ball",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,-0.05404350743129402,0.00363351232153708,1],
+					"geometry": "cbf61ed4-bea8-42d3-843d-8dc5edb725e1",
+					"material": "82b32ccf-0e7d-43ba-b6aa-3b0eb921fe68"
+				},
+				{
+					"uuid": "8482c6a3-a1bd-4e3e-af82-d5a5bcf9f045",
+					"type": "Mesh",
+					"name": "Box",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,-0.11909863573565638,-0.018698245368226896,1.0213211273403018,1],
+					"geometry": "e9f9795d-2db0-4fe1-a7a4-57af93719684",
+					"material": "61fb5735-5c43-4d57-9d67-c2ad6d8f994c"
+				},
+				{
+					"uuid": "d97ab1ee-eecf-41a3-9f10-3922826e85c0",
+					"type": "Mesh",
+					"name": "Box",
+					"layers": 1,
+					"matrix": [2.220446049250313e-16,0,-1,0,0,1,0,0,1,0,2.220446049250313e-16,0,1.037,-0.018668586851570884,2.192,1],
+					"geometry": "6ec419c8-638f-40eb-bc3b-1addabab94e0",
+					"material": "61fb5735-5c43-4d57-9d67-c2ad6d8f994c"
+				},
+				{
+					"uuid": "8f26ecf2-0116-430a-9ee1-5a57dd9c7133",
+					"type": "Mesh",
+					"name": "Box",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,2.1915472006570593,-0.018698245368226896,1.0213211273403018,1],
+					"geometry": "b32cc730-7eb4-4caa-88fc-cddeece0fa02",
+					"material": "61fb5735-5c43-4d57-9d67-c2ad6d8f994c"
+				},
+				{
+					"uuid": "39db718a-e6cd-4792-b4f0-81624b3b9a55",
+					"type": "Mesh",
+					"name": "Box",
+					"layers": 1,
+					"matrix": [2.220446049250313e-16,0,-1,0,0,1,0,0,1,0,2.220446049250313e-16,0,1.037,-0.018668586851570884,-0.1392546460533146,1],
+					"geometry": "6ec419c8-638f-40eb-bc3b-1addabab94e0",
+					"material": "61fb5735-5c43-4d57-9d67-c2ad6d8f994c"
+				}]
+		}
+	},
+	"scripts": {
+		"02350375-ee62-46ca-9747-f034decbb011": [
+			{
+				"name": "Game Logic",
+				"source": "var delay = 300;\nvar size = 20\n\n\n\nfunction getRandomDirection(){\n\t\n\tconst v = Math.floor(Math.random() * 3)\n\tswitch (v) {\n\t  \tcase 0:\n\t\t\treturn \"right\";\n\t\tcase 1:\n\t\t\treturn \"left\";\n\t\tcase 2:\n\t\t\treturn \"up\";\n\t  \tdefault:\n\t\t\treturn \"down\"\n\t}\n\t\n}\n\n\n\nvar direction = getRandomDirection()\nvar food;\nvar snake = [\n\t{\n\t\tx: size/2,\n\t\ty: size/2\n\t}\n]\n\nvar interval;\nvar score = 0;\nvar maxScore = 0;\nvar hardness = 1;\nvar scoreCounter = 1;\n\n\nfunction checkFood(f) {\n  if (f.x < 0 || f.y < 0) {\n    return false;\n  }\n  for (let item of snake) {\n    if (f.x === item.x && f.y === item.y) {\n      return false;\n    }\n  }\n  return true;\n}\n\nfunction newFood() {\n  let f = {\n    x: Math.floor(Math.random() * size - 1),\n    y: Math.floor(Math.random() * size - 1),\n  };\n  while (!checkFood(f)) {\n    f = {\n      x: Math.floor(Math.random() * size - 1),\n      y: Math.floor(Math.random() * size - 1),\n    };\n  }\n  return f;\n}\n\n\nfunction tick(){\n\t\n\tfor(let item of snake){\n\t\tconst index = (item.x * size) + item.y;\n\t\t//group.children[index].position.y = -0.1;\n\t\t\n\t\tgroup.children[index].material.color.setHex(0xd1d1d1);\n\t\tgroup.children[index].visible = false;\n\t}\n\t\n\t\n\tif(snake.length > 1){\n\t\tfor(let i = snake.length - 1;i > 0;i--){\n\t\t\tsnake[i].x = snake[i-1].x;\n\t\t\tsnake[i].y = snake[i-1].y;\n\t\t}\n\t}\n\t\n\tconst headAnt = {\n\t\tx: snake[0].x,\n\t\ty: snake[0].y\n\t}\n\t\n\t\n\tswitch (direction) {\n\t  \tcase \"right\":\n\t\t\tif(snake[0].x + 1 >= size){\n\t\t\t\tsnake[0].x\t= 0\n\t\t\t}else {\n\t\t\t\tsnake[0].x += 1;\n\t\t\t}\n\t\t\tbreak;\n\t\tcase \"left\":\n\t\t\tif(snake[0].x - 1 < 0){\n\t\t\t\tsnake[0].x\t= size - 1;\n\t\t\t}else {\n\t\t\t\tsnake[0].x -= 1;\n\t\t\t}\n\t\t\tbreak;\n\t\tcase \"up\":\n\t\t\tif(snake[0].y + 1 >= size){\n\t\t\t\tsnake[0].y\t= 0\n\t\t\t}else {\n\t\t\t\tsnake[0].y += 1;\n\t\t\t}\n\t\t\tbreak;\n\t  \tdefault:\n\t\t\tif(snake[0].y - 1 < 0){\n\t\t\t\tsnake[0].y\t= size - 1;\n\t\t\t}else {\n\t\t\t\tsnake[0].y -= 1;\n\t\t\t}\n\t}\n\t\n\t\n\t\n\t\n\tif(snake[0].x == food.x && snake[0].y == food.y){\n\t\tsnake.push({x:headAnt.x,y:headAnt.y})\n\t\tgroup.children[(food.x * size) + food.y].material.color.setHex(0xd1d1d1)\n\t\tgroup.children[(food.x * size) + food.y].visible = false;\n\t\tfood = newFood()\n\t\t\n\t\t\n\t\t\n\t\tif(scoreCounter == 5){\n\t\t\tscoreCounter = 1;\n\t\t\thardness += 1;\n\t\t\tdocument.getElementById(\"hardness\").innerText =hardness\n\t\t\tclearInterval(interval);\n\t\t\tinterval = setInterval(() => {\n\t\t\t\ttick()\n\t\t\t}, delay - (hardness * 20))\n\t\t}\n\t\t\n\t\tscore += 10 * hardness;\n\t\tdocument.getElementById(\"score\").innerText = score\n\t\tscoreCounter++;\n\t\t\n\t\t\n\t\tif(score > maxScore){\n\t\t\tmaxScore = score;\n\t\t\tdocument.getElementById(\"maxScore\").innerText = maxScore\n\t\t}\n\t\t\n\t}\n\t\n\tfor(let i = 1;i<snake.length;i++){\n\t\tif(snake[0].x == snake[i].x && snake[0].y==snake[i].y){\n\t\t\tsnake = [\n\t\t\t\t{\n\t\t\t\t\tx: size/2,\n\t\t\t\t\ty: size/2\n\t\t\t\t}\n\t\t\t]\n\t\t\tscore = 0;\n\t\t\tscoreCounter = 1;\n\t\t\thardness = 1;\n\t\t\tdocument.getElementById(\"hardness\").innerText = hardness\n\t\t\tdocument.getElementById(\"score\").innerText = score\n\t\t\tclearInterval(interval);\n\t\t\talert('Fim de Jogo');\n\t\t\t\n\t\t\tinterval = setInterval(() => {\n\t\t\t\ttick()\n\t\t\t}, delay - (hardness * 20))\n\t\t}\n\t}\n\t\n\t\n\tlet c = 0;\n\tfor(let item of snake){\n\t\t\n\t\tconst index = (item.x * size) + item.y;\n\t\t//group.children[index].material.color.setHex(`0x${c.toString(16)}8405`)\n\t\tgroup.children[index].material.color.setHex(0x380555)\n\t\tgroup.children[index].visible = true;\n\t\t//group.children[index].position.y = 0.1;\n\t\tc += 5;\n\t}\n\t\n\t\n\t//group.children[(food.x * size) + food.y].position.y = 0.1;\n\tgroup.children[(food.x * size) + food.y].visible = true;\n\tgroup.children[(food.x * size) + food.y].material.color.setHex(0x947BC4)\n\t\n}\n\nvar group1 = new THREE.Group();\nvar group = new THREE.Group();\nthis.add( group );\nthis.add( group1 );\n\nfunction checkKey(e) {\n\t\n\tvar event = window.event ? window.event : e;\n\t\n\tif (e.keyCode == \"38\" && direction != 'down') {\n    \tdirection = \"up\";\n\t} else if (e.keyCode == \"40\" && direction != 'up') {\n\t\t direction = \"down\";\n\t} else if (e.keyCode == \"37\" && direction != 'right') {\n\t\t direction = \"left\";\n\t} else if (e.keyCode == \"39\" && direction != 'left') {\n\t\t direction = \"right\";\n\t}\n\t\n\tdocument.onkeydown = () => {};\n\tsetTimeout(() => {\n\t\tdocument.onkeydown = checkKey;\n\t}, delay)\n}\n\n\nvar box = this.getObjectByName( 'ball' );\nvar box1 = this.getObjectByName( 'box' );\n\n\nfor ( var j = 0; j < size; j ++ ) {\n\tfor ( var i = 0; i < size; i ++ ) {\t\t\n\t\tvar material = new THREE.MeshPhongMaterial( { color: 0xffffff } );\n\t\tvar object = box.clone();\n\t\tobject.position.x = i * 0.11;\n\t\tobject.position.z = j * 0.11;\n\t\tobject.position.y = 0.1;\n\t\tobject.material = material;\n\t\tobject.visible = false;\n\t\tgroup.add( object );\n\t\t\n\t\tconst v = j%2==0;\n\t\tconst v2 = v? i%2 == 0:i%2 != 0;\n\t\t\n\t\tvar material1 = new THREE.MeshPhongMaterial( { color: v2? 0xE2A7FF:0xCA83F2 } );\n\t\tvar object1 = box1.clone();\n\t\tobject1.position.x = i * 0.11;\n\t\tobject1.position.z = j * 0.11;\n\t\tobject1.position.y = 0.031;\n\t\tobject1.material = material1;\n\t\tgroup1.add( object1 );\n\t\t\n\t}\n}\n\n\n//group.children[1].position.y -=0.1;\nbox.material.opacity = 0;\nbox.position.y = -0.23;\n\nconsole.log(group.children[30])\n\n\ndocument.onkeydown = checkKey;\n\n\nfood = newFood()\n\ninterval = setInterval(() => {\n\ttick()\n}, delay)\n\nfunction update( event ) {\n\t\n\t\n}"
+			}]
+	}
+}
